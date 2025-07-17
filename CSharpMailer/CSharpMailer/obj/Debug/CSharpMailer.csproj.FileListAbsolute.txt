@@ -1,0 +1,11 @@
+C:\Users\hp\source\repos\CSharpMailer\CSharpMailer\bin\Debug\CSharpMailer.exe.config
+C:\Users\hp\source\repos\CSharpMailer\CSharpMailer\bin\Debug\CSharpMailer.exe
+C:\Users\hp\source\repos\CSharpMailer\CSharpMailer\bin\Debug\CSharpMailer.pdb
+C:\Users\hp\source\repos\CSharpMailer\CSharpMailer\obj\Debug\CSharpMailer.csproj.AssemblyReference.cache
+C:\Users\hp\source\repos\CSharpMailer\CSharpMailer\obj\Debug\CSharpMailer.Form1.resources
+C:\Users\hp\source\repos\CSharpMailer\CSharpMailer\obj\Debug\CSharpMailer.Properties.Resources.resources
+C:\Users\hp\source\repos\CSharpMailer\CSharpMailer\obj\Debug\CSharpMailer.csproj.GenerateResource.cache
+C:\Users\hp\source\repos\CSharpMailer\CSharpMailer\obj\Debug\CSharpMailer.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\CSharpMailer\CSharpMailer\obj\Debug\CSharpMailer.exe
+C:\Users\hp\source\repos\CSharpMailer\CSharpMailer\obj\Debug\CSharpMailer.pdb
+C:\Users\hp\source\repos\CSharpMailer\CSharpMailer\obj\Debug\CSharpMailer.exe.config
