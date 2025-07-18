@@ -32,35 +32,39 @@ namespace CSharpMailer
 
         private void btnSend_Click(object sender, EventArgs e)
         {
-            try
-            {
-                // GÖNDERİCİ BİLGİLERİ
-                string fromEmail = "selcukozkurt668@gmail.com"; // kendi e-posta adresin
-                string password = "ziuecccxlmvbcuvz";        // Gmail uygulama şifresi
+           try
+{
+    string fromEmail = "selcukozkurt668@gmail.com";
+    string password = "ziuecccxlmvbcuvz";
 
-                // KULLANICIDAN ALINANLAR
-                string toEmail = txtTo.Text;
-                string subject = txtSubject.Text;
-                string body = txtBody.Text;
+    string toEmail = txtTo.Text.Trim();
+    string subject = txtSubject.Text.Trim();
+    string body = txtBody.Text;
 
-                MailMessage message = new MailMessage();
-                message.From = new MailAddress(fromEmail);
-                message.To.Add(toEmail);
-                message.Subject = subject;
-                message.Body = body;
+    if (string.IsNullOrWhiteSpace(toEmail))
+    {
+        MessageBox.Show("Lütfen alıcı e-posta adresini girin.");
+        return;
+    }
 
-                SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
-                smtp.Credentials = new NetworkCredential(fromEmail,password);
-                smtp.EnableSsl = true;
+    MailMessage message = new MailMessage();
+    message.From = new MailAddress(fromEmail);
+    message.To.Add(toEmail);
+    message.Subject = subject;
+    message.Body = body;
 
-                smtp.Send(message);
+    SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
+    smtp.Credentials = new NetworkCredential(fromEmail, password);
+    smtp.EnableSsl = true;
 
-                MessageBox.Show("Mail başarıyla gönderildi!");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Hata oluştu: " + ex.Message);
-            }
+    smtp.Send(message);
+
+    MessageBox.Show("Mail başarıyla gönderildi!");
+}
+catch (Exception ex)
+{
+    MessageBox.Show("Hata oluştu: " + ex.Message);
+}
         }
     }
 }
